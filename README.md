@@ -4,7 +4,6 @@
 ![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Random%20Forest-green)
 ![Accuracy](https://img.shields.io/badge/Accuracy-76.64%25-brightgreen)
 ![Power BI](https://img.shields.io/badge/Power%20BI-Dashboard-yellow)
-![Status](https://img.shields.io/badge/Status-Live%20Updating-orange)
 
 ---
 
@@ -12,7 +11,6 @@
 
 This project predicts the **IPL 2026 winner** using Machine Learning trained on **17 years of IPL data (2008–2026)**. The model analyses historical match results, team form, head-to-head records and venue statistics to generate win probabilities for all 10 teams.
 
-The project is **live-updating** — predictions are refreshed after every match day as new 2026 results come in.
 
 ---
 
@@ -39,7 +37,7 @@ The project is **live-updating** — predictions are refreshed after every match
 
 > Power BI dashboard showing win probabilities, team rankings and playoff qualifications.
 
-*(Add screenshot of your Power BI dashboard here)*
+*<img width="1437" height="816" alt="IPL_2026_Prediction" src="https://github.com/user-attachments/assets/4d5336b2-7323-4d1d-8490-97d725ec2f6d" />*
 
 ---
 
@@ -63,12 +61,6 @@ IPL-2026-Winner-Prediction/
 │   ├── 01_data_collection.ipynb   ← Download and merge Cricsheet data
 │   ├── 02_feature_engineering.ipynb ← Build ML features
 │   └── 03_modelling.ipynb         ← Train models and generate predictions
-│
-├── src/
-│   └── update_2026.py             ← Daily script to fetch live 2026 results
-│
-├── predictions/
-│   └── ipl_2026_predictions.csv   ← Latest win probability per team
 │
 ├── dashboard/
 │   └── IPL_2026_Prediction.pbix   ← Power BI dashboard file
@@ -123,22 +115,6 @@ Trained and compared 3 ML models:
 
 ---
 
-## 🔄 Live Updating
-
-The project updates automatically after each match day:
-
-```bash
-# Run this every evening after matches
-python src/update_2026.py
-```
-
-This script:
-1. Fetches latest 2026 match results from ESPNcricinfo
-2. Checks for new completed matches
-3. Appends them to the master dataset
-4. Skips matches already in the dataset (no duplicates)
-
----
 
 ## 🛠️ Tech Stack
 
@@ -159,7 +135,7 @@ This script:
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/ipl-2026-winner-prediction.git
+git clone https://github.com/vineet1595/ipl-2026-winner-prediction.git
 
 # Navigate to project folder
 cd ipl-2026-winner-prediction
@@ -192,8 +168,6 @@ python src/update_2026.py
 | Source | Data |
 |--------|------|
 | [Cricsheet.org](https://cricsheet.org/downloads/) | Ball-by-ball IPL data 2008–2025 |
-| [ESPNcricinfo](https://www.espncricinfo.com) | Live IPL 2026 match results |
-| [Kaggle](https://www.kaggle.com/datasets/maratheabhishek/ipl-dataset-2008-to-2025) | IPL match-level dataset 2008–2025 |
 
 ---
 
