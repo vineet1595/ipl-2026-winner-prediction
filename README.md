@@ -183,8 +183,8 @@ Specialising in Power BI, DAX, SQL and Python
 
 ## 📬 Connect
 
-- 💼 LinkedIn: [Your LinkedIn URL]
-- 🐙 GitHub: [Your GitHub URL]
+- 💼 LinkedIn: [(https://linkedin.com/in/vm62)]
+- 🐙 GitHub: [https://github.com/vineet1595]
 
 ---
 
